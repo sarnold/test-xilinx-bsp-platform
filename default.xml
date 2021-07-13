@@ -15,13 +15,12 @@
   <project remote="xilinx" revision="gatesgarth" name="meta-xilinx" path="oe-core/meta-xilinx"/>
   <project remote="xilinx" revision="gatesgarth" name="meta-security" path="oe-core/meta-security"/>
   <project remote="xilinx" revision="gatesgarth" name="meta-xilinx-tools" path="oe-core/meta-xilinx-tools"/>
-  <project remote="xilinx" revision="gatesgarth" name="meta-openembedded" path="oe-core/meta-openembedded"/>
   <project remote="xilinx" revision="gatesgarth" name="meta-clang" path="oe-core/meta-clang"/>
   <project remote="xilinx" revision="gatesgarth" name="meta-openamp" path="oe-core/meta-openamp"/>
   <project remote="xilinx" revision="gatesgarth" name="meta-petalinux" path="oe-core/meta-petalinux"/>
   <project remote="xilinx" revision="gatesgarth" name="meta-virtualization" path="oe-core/meta-virtualization"/>
 
-  <project remote="sla" revision="master" name="meta-small-arm-extra" path="oe-core/meta-small-arm-extra"/>
+  <project remote="sla" revision="gatesgarth" name="meta-small-arm-extra" path="oe-core/meta-small-arm-extra"/>
 
 </manifest>
 
