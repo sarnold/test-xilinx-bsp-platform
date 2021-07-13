@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="4" revision="poky-2021.1"/>
+
+  <remote fetch="https://github.com/Xilinx" name="xilinx"/>
+  <remote fetch="https://github.com/sarnold" name="sla"/>
+  <remote fetch="https://github.com/VCTLabs" name="vct"/>
+
+  <project remote="xilinx" revision="rel-v2021.1" name="poky" path="poky"/>
+  <project remote="xilinx" revision="rel-v2021.1" name="meta-xilinx" path="poky/meta-xilinx"/>
+  <project remote="xilinx" revision="rel-v2021.1" name="meta-security" path="poky/meta-security"/>
+  <project remote="xilinx" revision="rel-v2021.1" name="meta-xilinx-tools" path="poky/meta-xilinx-tools"/>
+  <project remote="xilinx" revision="rel-v2021.1" name="meta-openembedded" path="poky/meta-openembedded"/>
+  <project remote="xilinx" revision="rel-v2021.1" name="meta-clang" path="poky/meta-clang"/>
+  <project remote="xilinx" revision="rel-v2021.1" name="meta-openamp" path="poky/meta-openamp"/>
+  <project remote="xilinx" revision="rel-v2021.1" name="meta-petalinux" path="poky/meta-petalinux"/>
+  <project remote="xilinx" revision="rel-v2021.1" name="meta-virtualization" path="poky/meta-virtualization"/>
+
+  <project remote="sla" revision="master" name="meta-small-arm-extra" path="poky/meta-small-arm-extra"/>
+
+</manifest>
+

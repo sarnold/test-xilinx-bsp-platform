@@ -11,7 +11,7 @@ layers underneath (as documented in the upstream setup).
 machine variants
 ----------------
 
-Current tested machine variants on dunfell branch:
+Current tested machine variants on newer <release> branches:
 
 * zedboard
 * microzed
@@ -56,13 +56,13 @@ Download the BSP source
   $ PATH=${PATH}:~/bin
   $ mkdir xilinx-bsp
   $ cd xilinx-bsp
-  $ repo init -u https://github.com/VCTLabs/vct-xilinx-bsp-platform -b poky-<release>
+  $ repo init -u https://github.com/sarnold/test-xilinx-bsp-platform -b poky-2021.1
   $ repo sync
 
 At the end of the above commands you have all the metadata you need to start
-building with poky and meta-oe on <release> branches.
+building with poky and meta-oe on the 2021.1 release branch.
 
-To start a simple image build for a riscv qemu target::
+To start a simple image build for your MACHINE target::
 
   $ cd poky
   $ source ./oe-init-build-env build-dir  # you choose name of build-dir
@@ -71,8 +71,8 @@ To start a simple image build for a riscv qemu target::
 
 
 You can use any directory (build-dir above) to host your build. The above
-commands will build an image for riscv using the riscv BSP
-machine config and the default yocto-linux kernel.
+commands will build an image for the target using the BSP machine config
+and the default kernel.
 
 The main source code is checked out in the bsp dir above, and the build
 output dir will default to poky/build-dir unless you choose a different
@@ -83,18 +83,19 @@ Source code
 
 Download the manifest source here::
 
-  $ git clone https://github.com/VCTLabs/vct-xilinx-bsp-platform
+  $ git clone https://github.com/sarnold/test-xilinx-bsp-platform
+
 
 Using Development and Testing/Release Branches
 ----------------------------------------------
 
 Replace the repo init command above with one of the following:
 
-For developers - <release>
+For developers - 2021.1
 
 ::
 
-  $ repo init -u https://github.com/VCTLabs/vct-beagleboard-bsp-platform -b poky-<release>
+  $ repo init -u https://github.com/sarnold/test-xilinx-bsp-platform -b poky-2021.1
 
 For intrepid developers and testers - master
 
@@ -105,6 +106,6 @@ breaks something that was working before.  Use with caution.
 
 ::
 
-  $ repo init -u https://github.com/VCTLabs/vct-beagleboard-bsp-platform -b poky-master
+  $ repo init -u https://github.com/sarnold/test-xilinx-bsp-platform -b poky-master
 
 
