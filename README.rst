@@ -35,7 +35,7 @@ once you've run the ``repo init`` and ``repo sync`` commands.  Try::
   $ repo show
   $ repo status
 
-See the default.xml file for repo and branch details; if this is the 'main'
+See the default.xml file for repo and branch details; if this is the 'main' (or master)
 branch, then the following example is generic so go back and select a build
 branch from this repo.
 
@@ -56,11 +56,11 @@ Download the BSP source
   $ PATH=${PATH}:~/bin
   $ mkdir xilinx-bsp
   $ cd xilinx-bsp
-  $ repo init -u https://github.com/VCTLabs/vct-xilinx-bsp-platform -b poky-dunfell
+  $ repo init -u https://github.com/VCTLabs/vct-xilinx-bsp-platform -b poky-<release>
   $ repo sync
 
 At the end of the above commands you have all the metadata you need to start
-building with poky and meta-oe on dunfell branches.
+building with poky and meta-oe on <release> branches.
 
 To start a simple image build for a riscv qemu target::
 
@@ -90,11 +90,11 @@ Using Development and Testing/Release Branches
 
 Replace the repo init command above with one of the following:
 
-For developers - dunfell
+For developers - <release>
 
 ::
 
-  $ repo init -u https://github.com/VCTLabs/vct-beagleboard-bsp-platform -b poky-dunfell
+  $ repo init -u https://github.com/VCTLabs/vct-beagleboard-bsp-platform -b poky-<release>
 
 For intrepid developers and testers - master
 
