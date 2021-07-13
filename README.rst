@@ -94,7 +94,7 @@ For developers - <release>
 
 ::
 
-  $ repo init -u https://github.com/VCTLabs/vct-beagleboard-bsp-platform -b poky-<release>
+  $ repo init -u https://github.com/sarnold/test-xilinx-bsp-platform -b poky-<release>
 
 For intrepid developers and testers - master
 
@@ -105,6 +105,6 @@ breaks something that was working before.  Use with caution.
 
 ::
 
-  $ repo init -u https://github.com/VCTLabs/vct-beagleboard-bsp-platform -b poky-master
+  $ repo init -u https://github.com/sarnold/test-xilinx-bsp-platform -b poky-master
 
 
