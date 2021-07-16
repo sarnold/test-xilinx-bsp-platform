@@ -11,7 +11,7 @@
   <remote fetch="https://github.com/VCTLabs" name="vct"/>
 
   <project remote="oe-core" revision="zeus" name="openembedded-core" path="oe-core"/>
-  <project remote="oe-core" revision="1.46.3" name="bitbake" path="oe-core/bitbake"/>
+  <project remote="oe-core" revision="1.48.0" name="bitbake" path="oe-core/bitbake"/>
 
   <project remote="xilinx" revision="rel-v2020.2" name="meta-openembedded" path="oe-core/meta-openembedded"/>
   <project remote="xilinx" revision="rel-v2020.2" name="meta-xilinx" path="oe-core/meta-xilinx"/>
