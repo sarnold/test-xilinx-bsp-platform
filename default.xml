@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="4" sync-c="true" revision="oe-2020.2"/>
+  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote fetch="https://github.com/openembedded" name="oe-core"/>
+  <remote fetch="https://github.com/OpenAmp" name="openamp"/>
+  <remote fetch="https://github.com/Xilinx" name="xilinx"/>
+  <remote fetch="https://github.com/kraj" name="kraj"/>
+  <remote fetch="https://github.com/sarnold" name="sla"/>
+  <remote fetch="https://github.com/VCTLabs" name="vct"/>
+
+  <project remote="oe-core" revision="gatesgarth" name="openembedded-core" path="oe-core"/>
+  <project remote="oe-core" revision="1.48" name="bitbake" path="oe-core/bitbake"/>
+
+  <project remote="xilinx" revision="rel-v2020.2" name="meta-openembedded" path="oe-core/meta-openembedded"/>
+  <project remote="xilinx" revision="rel-v2020.2" name="meta-xilinx" path="oe-core/meta-xilinx"/>
+  <project remote="xilinx" revision="rel-v2020.2" name="meta-security" path="oe-core/meta-security"/>
+  <project remote="xilinx" revision="rel-v2020.2" name="meta-xilinx-tools" path="oe-core/meta-xilinx-tools"/>
+  <project remote="xilinx" revision="rel-v2020.2" name="meta-clang" path="oe-core/meta-clang"/>
+  <project remote="xilinx" revision="rel-v2020.2" name="meta-openamp" path="oe-core/meta-openamp"/>
+  <project remote="xilinx" revision="rel-v2020.2" name="meta-petalinux" path="oe-core/meta-petalinux"/>
+  <project remote="xilinx" revision="rel-v2020.2" name="meta-virtualization" path="oe-core/meta-virtualization"/>
+
+  <project remote="sla" revision="gatesgarth" name="meta-small-arm-extra" path="oe-core/meta-small-arm-extra"/>
+
+</manifest>
+

@@ -11,7 +11,7 @@ layers underneath (as documented in the upstream setup).
 machine variants
 ----------------
 
-Current tested machine variants on newer <release> branches:
+Current tested machine variants on the 2020.2 branch:
 
 * zedboard
 * microzed
@@ -56,15 +56,15 @@ Download the BSP source
   $ PATH=${PATH}:~/bin
   $ mkdir xilinx-bsp
   $ cd xilinx-bsp
-  $ repo init -u https://github.com/sarnold/test-xilinx-bsp-platform -b poky-<release>
+  $ repo init -u https://github.com/sarnold/test-xilinx-bsp-platform -b oe-2020.2
   $ repo sync
 
 At the end of the above commands you have all the metadata you need to start
-building with poky and meta-oe on <release> branches.
+building with oe-core and meta-oe on the gatesgarth branch.
 
 To start a simple image build for your MACHINE target::
 
-  $ cd poky
+  $ cd oe-core
   $ source ./oe-init-build-env build-dir  # you choose name of build-dir
   $ ${EDITOR} conf/local.conf             # set MACHINE to <your_machine> (see above)
   $ bitbake core-image-minimal
@@ -72,10 +72,10 @@ To start a simple image build for your MACHINE target::
 
 You can use any directory (build-dir above) to host your build. The above
 commands will build an image for the target using the BSP
-machine config and the default yocto-linux kernel.
+machine config and the default BSP kernel.
 
 The main source code is checked out in the bsp dir above, and the build
-output dir will default to poky/build-dir unless you choose a different
+output dir will default to oe-core/build-dir unless you choose a different
 path above.
 
 Source code
@@ -90,11 +90,11 @@ Using Development and Testing/Release Branches
 
 Replace the repo init command above with one of the following:
 
-For developers - <release>
+For developers - gatesgarth (Xilinx release 2020.2)
 
 ::
 
-  $ repo init -u https://github.com/sarnold/test-xilinx-bsp-platform -b poky-<release>
+  $ repo init -u https://github.com/sarnold/test-xilinx-bsp-platform -b oe-2020.2
 
 For intrepid developers and testers - master
 
@@ -105,6 +105,6 @@ breaks something that was working before.  Use with caution.
 
 ::
 
-  $ repo init -u https://github.com/sarnold/test-xilinx-bsp-platform -b poky-master
+  $ repo init -u https://github.com/sarnold/test-xilinx-bsp-platform -b oe-master
 
 
