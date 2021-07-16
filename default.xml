@@ -15,7 +15,7 @@
 
   <project remote="xilinx" revision="rel-v2020.2" name="meta-openembedded" path="oe-core/meta-openembedded"/>
   <project remote="xilinx" revision="rel-v2020.2" name="meta-xilinx" path="oe-core/meta-xilinx"/>
-  <project remote="xilinx" revision="rel-v2020.2" name="meta-security" path="oe-core/meta-security"/>
+  <project remote="xilinx" revision="release-2020.2.2_k26" name="meta-security" path="oe-core/meta-security"/>
   <project remote="xilinx" revision="rel-v2020.2" name="meta-xilinx-tools" path="oe-core/meta-xilinx-tools"/>
   <project remote="xilinx" revision="rel-v2020.2" name="meta-clang" path="oe-core/meta-clang"/>
   <project remote="xilinx" revision="rel-v2020.2" name="meta-openamp" path="oe-core/meta-openamp"/>
